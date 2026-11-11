@@ -1,0 +1,15 @@
+{
+  "tool_state": "ok",
+  "ocr_text": "ALERT\nOrder: Zorvatin 5 mg tablet QD\nPatient: Test Patient 01\nOK",
+  "faults": [
+    {
+      "fault_id": "f1",
+      "rule_id": "EMR-01",
+      "quote": "Zorvatin 5 mg tablet QDD",
+      "location": "line 2",
+      "severity": "major",
+      "confidence": 0.8,
+      "audience": "nurse"
+    }
+  ]
+}

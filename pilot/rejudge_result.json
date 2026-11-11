@@ -1,0 +1,722 @@
+{
+ "after": {
+  "clean_cases_left_clean": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "4 of 4"
+  },
+  "false_alarms": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "1 of 20"
+  },
+  "found": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "12 of 12"
+  },
+  "missed": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "0 of 12"
+  },
+  "replay_gap": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "0 of 20"
+  },
+  "traps_caught": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "2 of 2"
+  },
+  "unable_to_check": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "3 of 20"
+  },
+  "unreadable_cases_unable": {
+   "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+   "value": "2 of 2"
+  }
+ },
+ "before": {
+  "clean_cases_left_clean": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "3 of 4"
+  },
+  "false_alarms": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "5 of 20"
+  },
+  "found": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "9 of 12"
+  },
+  "missed": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "3 of 12"
+  },
+  "traps_caught": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "2 of 2"
+  },
+  "unable_to_check": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "3 of 20"
+  },
+  "unreadable_cases_unable": {
+   "label": "PILOT, 20 made-up development cases, one run",
+   "value": "2 of 2"
+  }
+ },
+ "changes": [
+  {
+   "after": "found",
+   "after_extra_kept": 0,
+   "before": "missed",
+   "before_extra_kept": 0,
+   "case_id": "P03"
+  },
+  {
+   "after": "found",
+   "after_extra_kept": 0,
+   "before": "missed",
+   "before_extra_kept": 0,
+   "case_id": "P04"
+  },
+  {
+   "after": "found",
+   "after_extra_kept": 1,
+   "before": "missed",
+   "before_extra_kept": 2,
+   "case_id": "P08"
+  },
+  {
+   "after": "found",
+   "after_extra_kept": 0,
+   "before": "found",
+   "before_extra_kept": 1,
+   "case_id": "P09"
+  },
+  {
+   "after": "found",
+   "after_extra_kept": 0,
+   "before": "found",
+   "before_extra_kept": 1,
+   "case_id": "P10"
+  },
+  {
+   "after": "found",
+   "after_extra_kept": 0,
+   "before": "found",
+   "before_extra_kept": 1,
+   "case_id": "P11"
+  },
+  {
+   "after": "correct_clean",
+   "after_extra_kept": 0,
+   "before": "false_alarm",
+   "before_extra_kept": 1,
+   "case_id": "P14"
+  }
+ ],
+ "label": "PILOT, 20 made-up development cases, re-judged by code, same model outputs",
+ "note": "Pre-check only. Does not replace a human factors engineer. Not a medical device. NOT REVIEWED. Counts only. No model call was made.",
+ "per_case": [
+  {
+   "case_id": "P01",
+   "expected": {
+    "case_id": "P01",
+    "expected_quotes": [
+     "QD",
+     "Take 1 tablet QD"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "abbreviation QD for once a day",
+    "rule_id": "EMR-01",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "Take 1 tablet QD",
+      "reason": "quote found, rule id valid, regex agrees",
+      "rule_id": "EMR-01",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P02",
+   "expected": {
+    "case_id": "P02",
+    "expected_quotes": [
+     "10 U",
+     "Give 10 U subcut at night"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "U for units",
+    "rule_id": "EMR-01",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "Give 10 U subcut at night",
+      "reason": "quote found, rule id valid, regex agrees",
+      "rule_id": "EMR-01",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P03",
+   "expected": {
+    "case_id": "P03",
+    "expected_quotes": [
+     "5.0 mg",
+     "Krellon 5.0 mg tablet"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "trailing zero",
+    "rule_id": "EMR-01",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "5.0 mg",
+      "reason": "found by code rule, no model finding",
+      "rule_id": "EMR-01",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P04",
+   "expected": {
+    "case_id": "P04",
+    "expected_quotes": [
+     ".5 mg",
+     "Dravolex .5 mg tablet"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "no leading zero",
+    "rule_id": "EMR-01",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": ".5 mg",
+      "reason": "found by code rule, no model finding",
+      "rule_id": "EMR-01",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P05",
+   "expected": {
+    "case_id": "P05",
+    "expected_quotes": [
+     "Brindacol 20 mg",
+     "Brindacor 20 mg"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "look-alike names without tall-man letters",
+    "rule_id": "EMR-02",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "Brindacol 20 mg\nBrindacor 20 mg\nBrindavel 20 mg",
+      "reason": "quote found, rule id valid",
+      "rule_id": "EMR-02",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P06",
+   "expected": {
+    "case_id": "P06",
+    "expected_quotes": [
+     "Quvessa 100 mg",
+     "Quvesta 100 mg"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "look-alike names without tall-man letters",
+    "rule_id": "EMR-02",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "Quvessa 100 mg\nQuvesta 100 mg\nOrsalen 50 mg",
+      "reason": "quote found, rule id valid",
+      "rule_id": "EMR-02",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P07",
+   "expected": {
+    "case_id": "P07",
+    "expected_quotes": [
+     "[Save]",
+     "[Save] save as draft",
+     "[Save] sign and send"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "one label for two actions",
+    "rule_id": "NIE-02",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "[Save] save as draft\n[Save] sign and send",
+      "reason": "quote found, rule id valid",
+      "rule_id": "NIE-02",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P08",
+   "expected": {
+    "case_id": "P08",
+    "expected_quotes": [
+     "[OK]"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "dismiss button only",
+    "rule_id": "ALT-03",
+    "split": "dev"
+   },
+   "extra_kept": 1,
+   "final": {
+    "dropped": [
+     {
+      "quote": "ALERT: Kelmorane dose 40 mg is above the range 5 to 20 mg",
+      "reason": "rule does not apply to this item type",
+      "rule_id": "NIE-03"
+     }
+    ],
+    "findings": [
+     {
+      "quote": "ALERT: Kelmorane dose 40 mg is above the range 5 to 20 mg",
+      "reason": "model and regex rule disagree (regex hit is not inside the quote)",
+      "rule_id": "ALT-03",
+      "state": "DISPUTED"
+     },
+     {
+      "quote": "[OK]",
+      "reason": "found by code rule, no model finding",
+      "rule_id": "ALT-03",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "2 fault(s) kept, at least one DISPUTED (a human must look). 1 dropped.",
+    "reason": null,
+    "state": "DISPUTED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P09",
+   "expected": {
+    "case_id": "P09",
+    "expected_quotes": [
+     "[Close]"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "dismiss button only",
+    "rule_id": "ALT-03",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [
+     {
+      "quote": "Possible duplicate order: Vexilan 10 mg already ordered today [Close]",
+      "reason": "rule does not apply to this item type",
+      "rule_id": "NIE-03"
+     }
+    ],
+    "findings": [
+     {
+      "quote": "Possible duplicate order: Vexilan 10 mg already ordered today [Close]",
+      "reason": "quote found, rule id valid, regex agrees",
+      "rule_id": "ALT-03",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 1 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P10",
+   "expected": {
+    "case_id": "P10",
+    "expected_quotes": [
+     "Check this order before you go on."
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "alert names no value and no reason",
+    "rule_id": "ALT-01",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [
+     {
+      "quote": "WARNING",
+      "reason": "ALT-02 needs two or more alerts on the screen to compare; the text holds fewer",
+      "rule_id": "ALT-02"
+     }
+    ],
+    "findings": [
+     {
+      "quote": "Check this order before you go on.",
+      "reason": "quote found, rule id valid",
+      "rule_id": "ALT-01",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 1 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P11",
+   "expected": {
+    "case_id": "P11",
+    "expected_quotes": [
+     "Something went wrong."
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "error without cause or fix",
+    "rule_id": "NIE-03",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [
+     {
+      "quote": "Something went wrong.",
+      "reason": "rule does not apply to this item type",
+      "rule_id": "ALT-01"
+     }
+    ],
+    "findings": [
+     {
+      "quote": "Something went wrong.",
+      "reason": "quote found, rule id valid",
+      "rule_id": "NIE-03",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 1 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P12",
+   "expected": {
+    "case_id": "P12",
+    "expected_quotes": [
+     "This window cannot be closed.",
+     "You must pick one to continue"
+    ],
+    "expected_state": "CONFIRMED",
+    "group": "fault",
+    "note": "forced choice",
+    "rule_id": "NIE-04",
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [
+     {
+      "quote": "This window cannot be closed.",
+      "reason": "quote found, rule id valid",
+      "rule_id": "NIE-04",
+      "state": "CONFIRMED"
+     }
+    ],
+    "message": "1 fault(s) CONFIRMED by code. 0 dropped.",
+    "reason": null,
+    "state": "CONFIRMED"
+   },
+   "group": "fault",
+   "outcome": "found"
+  },
+  {
+   "case_id": "P13",
+   "expected": {
+    "case_id": "P13",
+    "expected_quotes": [],
+    "expected_state": "CHECKED",
+    "group": "clean",
+    "note": "no fault planted",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [],
+    "message": "Text was read. 0 faults passed the code check. 0 dropped.",
+    "reason": null,
+    "state": "CHECKED"
+   },
+   "group": "clean",
+   "outcome": "correct_clean"
+  },
+  {
+   "case_id": "P14",
+   "expected": {
+    "case_id": "P14",
+    "expected_quotes": [],
+    "expected_state": "CHECKED",
+    "group": "clean",
+    "note": "no fault planted",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [
+     {
+      "quote": "BrinDACOL 20 milligrams\nBrinDACOR 20 milligrams\nBrindavel 20 milligrams",
+      "reason": "look-alike names already use tall-man letters",
+      "rule_id": "EMR-02"
+     }
+    ],
+    "findings": [],
+    "message": "Text was read. 0 faults passed the code check. 1 dropped.",
+    "reason": null,
+    "state": "CHECKED"
+   },
+   "group": "clean",
+   "outcome": "correct_clean"
+  },
+  {
+   "case_id": "P15",
+   "expected": {
+    "case_id": "P15",
+    "expected_quotes": [],
+    "expected_state": "CHECKED",
+    "group": "clean",
+    "note": "no fault planted",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [],
+    "message": "Text was read. 0 faults passed the code check. 0 dropped.",
+    "reason": null,
+    "state": "CHECKED"
+   },
+   "group": "clean",
+   "outcome": "correct_clean"
+  },
+  {
+   "case_id": "P16",
+   "expected": {
+    "case_id": "P16",
+    "expected_quotes": [],
+    "expected_state": "CHECKED",
+    "group": "clean",
+    "note": "no fault planted",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [],
+    "message": "Text was read. 0 faults passed the code check. 0 dropped.",
+    "reason": null,
+    "state": "CHECKED"
+   },
+   "group": "clean",
+   "outcome": "correct_clean"
+  },
+  {
+   "case_id": "P17",
+   "expected": {
+    "case_id": "P17",
+    "expected_quotes": [],
+    "expected_state": "UNABLE TO CHECK",
+    "group": "unreadable",
+    "note": "must say UNABLE TO CHECK, never no findings",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [],
+    "message": "COULD NOT CHECK: tool state is failed. This is not a clean result.",
+    "reason": "tool state is failed",
+    "state": "UNABLE TO CHECK"
+   },
+   "group": "unreadable",
+   "outcome": "correct_unable"
+  },
+  {
+   "case_id": "P18",
+   "expected": {
+    "case_id": "P18",
+    "expected_quotes": [],
+    "expected_state": "UNABLE TO CHECK",
+    "group": "unreadable",
+    "note": "must say UNABLE TO CHECK, never no findings",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [],
+    "message": "COULD NOT CHECK: tool state is ocr_failed. This is not a clean result.",
+    "reason": "tool state is ocr_failed",
+    "state": "UNABLE TO CHECK"
+   },
+   "group": "unreadable",
+   "outcome": "correct_unable"
+  },
+  {
+   "case_id": "P19",
+   "expected": {
+    "case_id": "P19",
+    "expected_quotes": [],
+    "expected_state": "CHECKED",
+    "group": "trap_fake_quote",
+    "note": "planted finding with a quote not in the text; must be dropped",
+    "rule_id": null,
+    "split": "dev",
+    "trap_quote": "Give double dose now"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [
+     {
+      "quote": "Give double dose now",
+      "reason": "quote not found in the OCR text",
+      "rule_id": "EMR-01",
+      "sent_back": true
+     }
+    ],
+    "findings": [],
+    "message": "Text was read. 0 faults passed the code check. 1 dropped.",
+    "reason": null,
+    "state": "CHECKED"
+   },
+   "group": "trap_fake_quote",
+   "outcome": "trap_caught"
+  },
+  {
+   "case_id": "P20",
+   "expected": {
+    "case_id": "P20",
+    "expected_quotes": [],
+    "expected_state": "UNABLE TO CHECK",
+    "group": "trap_repeat",
+    "note": "planted repeated sentence; the repeat detector must fire",
+    "rule_id": null,
+    "split": "dev"
+   },
+   "extra_kept": 0,
+   "final": {
+    "dropped": [],
+    "findings": [],
+    "message": "COULD NOT CHECK: repeat detector fired on both tries. This is not a clean result.",
+    "reason": "repeat detector fired on both tries",
+    "state": "UNABLE TO CHECK"
+   },
+   "group": "trap_repeat",
+   "outcome": "trap_caught"
+  }
+ ]
+}

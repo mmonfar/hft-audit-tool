@@ -1,0 +1,12 @@
+{
+ "case_id": "P01",
+ "expected_quotes": [
+  "QD",
+  "Take 1 tablet QD"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "abbreviation QD for once a day",
+ "rule_id": "EMR-01",
+ "split": "dev"
+}

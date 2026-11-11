@@ -1,0 +1,9 @@
+{
+ "case_id": "P08",
+ "fault_types": "ALT-03",
+ "group": "fault",
+ "kind": "alert",
+ "planted": "none",
+ "split": "dev",
+ "tool_state": "ok"
+}

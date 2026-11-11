@@ -1,0 +1,9 @@
+{
+ "case_id": "P13",
+ "expected_quotes": [],
+ "expected_state": "CHECKED",
+ "group": "clean",
+ "note": "no fault planted",
+ "rule_id": null,
+ "split": "dev"
+}

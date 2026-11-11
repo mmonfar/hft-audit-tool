@@ -1,0 +1,11 @@
+{
+ "case_id": "P09",
+ "expected_quotes": [
+  "[Close]"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "dismiss button only",
+ "rule_id": "ALT-03",
+ "split": "dev"
+}

@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.sqlite
+.env
+.env.*
+pilot/pilot_result.json
+pilot/pilot_run.log
+pilot/pilot_run.err.log
+pilot/results/
+*.log

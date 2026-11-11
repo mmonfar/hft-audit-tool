@@ -1,0 +1,11 @@
+{
+ "case_id": "P11",
+ "expected_quotes": [
+  "Something went wrong."
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "error without cause or fix",
+ "rule_id": "NIE-03",
+ "split": "dev"
+}

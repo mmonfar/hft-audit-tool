@@ -1,0 +1,10 @@
+{
+ "case_id": "P19",
+ "expected_quotes": [],
+ "expected_state": "CHECKED",
+ "group": "trap_fake_quote",
+ "note": "planted finding with a quote not in the text; must be dropped",
+ "rule_id": null,
+ "split": "dev",
+ "trap_quote": "Give double dose now"
+}

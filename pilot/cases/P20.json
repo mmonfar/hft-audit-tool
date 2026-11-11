@@ -1,0 +1,12 @@
+{
+ "case_id": "P20",
+ "fault_types": null,
+ "group": "trap_repeat",
+ "kind": "label",
+ "planted": "repeat",
+ "split": "dev",
+ "tool_state": "ok",
+ "trap": {
+  "type": "repeat"
+ }
+}

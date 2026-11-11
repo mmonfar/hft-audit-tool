@@ -1,0 +1,26 @@
+{
+ "dated_at": "2026-11-11T14:32:17.275303+00:00",
+ "files": {
+  "P01.expected.json": "5a8b0969d1935bf22f1a4bfbbba15c2a5fdb1348d458b89fa7c9d99bca2e1e14",
+  "P02.expected.json": "bf4a3637886aab40aec0c76fb45ff7716edfd684d8c825cf1754048369d06432",
+  "P03.expected.json": "cbe68b1b1d1d2dce6a1a3c519107e8d23ce9973baedb88575475cd877c1a1507",
+  "P04.expected.json": "8dd825a7b5ecd3da371f6f802282e8788893b490a92d28ffd369517ac35e6a6d",
+  "P05.expected.json": "af5cc393ec05c15021eca9c7cb756e45311082bc90bb460a6f04d741899a7599",
+  "P06.expected.json": "806759c0044805f4f3cb7edb442a1d967d2c5aa32f7af4e2904c9c936d3d3993",
+  "P07.expected.json": "11414ebe70f0d4680b45b5fa2ee3ad042fe5585ff0a105f1193de626ca5710b8",
+  "P08.expected.json": "fa0ad53bd4bac3cdad11bb64cefd966aa5aa9bc886424ebf304910fb5e5d0cf0",
+  "P09.expected.json": "af17cf8a5d1f12f9a609669d5fb85bab4a0c29ca11577e5ecdf21c1e5f415099",
+  "P10.expected.json": "a62939789f08c0963b9069b4f7e63502eba76f152083c1b7c23d6115bdf82a35",
+  "P11.expected.json": "e85f44a42e56e641a39261629ba57ed9434207729ddbf078de237e346fdfe61a",
+  "P12.expected.json": "84b239601e23c0be6459d353d485cbb7ccae35e30a7b949c42c2fdbeecc2d0d5",
+  "P13.expected.json": "068070d30e684eace470ad64ce48a5c5cf75eced0cc4e283022c46ba38c5546e",
+  "P14.expected.json": "4dbba2c7094147b860f6bcd1142b60b6d7a0e10caef2b01bfef79695507c4ddc",
+  "P15.expected.json": "42a89211ed31605eb16677f70376287f086b4de3d6764657056955a4ca12fe38",
+  "P16.expected.json": "73a9b91fd75067332cc42db2aeea4d4c8bc5e2723665b4782be14ac2ee25d88e",
+  "P17.expected.json": "9833cd611e3b934086a32fa0b53f96856081d58f8350d3db9b3f22480e5a5cdb",
+  "P18.expected.json": "64655784f926b358cbba7d8844d1721fce1886490ae030eaa6301abb74d0eecf",
+  "P19.expected.json": "16dc8519f519b36f62af6f4ad2754bf510e95f14c56d36857d24a3ec9f53912c",
+  "P20.expected.json": "5dc5fc5d89334c8f31231140406cd48381ed699f241de1f18d8018a8974c236e"
+ },
+ "note": "Expected answers written and hashed before any run. Do not edit."
+}

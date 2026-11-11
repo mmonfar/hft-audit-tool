@@ -1,0 +1,4 @@
+Order set: Admission
+[Save] save as draft
+[Save] sign and send
+Patient: Test Patient 05

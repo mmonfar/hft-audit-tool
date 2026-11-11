@@ -1,0 +1,3 @@
+Alert: Missed dose recorded for Test Patient 06
+You must pick one to continue: [Give now] [Skip dose]
+This window cannot be closed.

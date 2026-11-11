@@ -1,0 +1,11 @@
+{
+ "case_id": "P10",
+ "expected_quotes": [
+  "Check this order before you go on."
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "alert names no value and no reason",
+ "rule_id": "ALT-01",
+ "split": "dev"
+}

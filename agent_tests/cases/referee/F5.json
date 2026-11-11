@@ -1,0 +1,15 @@
+{
+  "tool_state": "ok",
+  "ocr_text": "",
+  "faults": [
+    {
+      "fault_id": "f1",
+      "rule_id": "ALT-01",
+      "quote": "anything",
+      "location": "line 2",
+      "severity": "major",
+      "confidence": 0.8,
+      "audience": "nurse"
+    }
+  ]
+}

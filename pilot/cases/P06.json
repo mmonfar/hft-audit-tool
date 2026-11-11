@@ -1,0 +1,9 @@
+{
+ "case_id": "P06",
+ "fault_types": "EMR-02",
+ "group": "fault",
+ "kind": "label",
+ "planted": "none",
+ "split": "dev",
+ "tool_state": "ok"
+}

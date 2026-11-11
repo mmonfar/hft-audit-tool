@@ -1,0 +1,12 @@
+{
+ "case_id": "P06",
+ "expected_quotes": [
+  "Quvessa 100 mg",
+  "Quvesta 100 mg"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "look-alike names without tall-man letters",
+ "rule_id": "EMR-02",
+ "split": "dev"
+}

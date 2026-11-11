@@ -1,0 +1,12 @@
+{
+ "case_id": "P05",
+ "expected_quotes": [
+  "Brindacol 20 mg",
+  "Brindacor 20 mg"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "look-alike names without tall-man letters",
+ "rule_id": "EMR-02",
+ "split": "dev"
+}

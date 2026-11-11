@@ -1,0 +1,12 @@
+{
+ "case_id": "P03",
+ "expected_quotes": [
+  "5.0 mg",
+  "Krellon 5.0 mg tablet"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "trailing zero",
+ "rule_id": "EMR-01",
+ "split": "dev"
+}

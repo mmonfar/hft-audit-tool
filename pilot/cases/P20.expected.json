@@ -1,0 +1,9 @@
+{
+ "case_id": "P20",
+ "expected_quotes": [],
+ "expected_state": "UNABLE TO CHECK",
+ "group": "trap_repeat",
+ "note": "planted repeated sentence; the repeat detector must fire",
+ "rule_id": null,
+ "split": "dev"
+}

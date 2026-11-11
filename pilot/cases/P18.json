@@ -1,0 +1,9 @@
+{
+ "case_id": "P18",
+ "fault_types": null,
+ "group": "unreadable",
+ "kind": "alert",
+ "planted": "unreadable",
+ "split": "dev",
+ "tool_state": "ocr_failed"
+}

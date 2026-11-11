@@ -1,0 +1,24 @@
+{
+  "tool_state": "ok",
+  "ocr_text": "ALERT\nZorvatin may be unsafe.\nButtons: [OK]",
+  "faults": [
+    {
+      "fault_id": "f1",
+      "rule_id": "ALT-01",
+      "quote": "Zorvatin may be unsafe",
+      "location": "line 2",
+      "severity": "major",
+      "confidence": 0.8,
+      "audience": "nurse"
+    },
+    {
+      "fault_id": "f2",
+      "rule_id": "ALT-03",
+      "quote": "This sentence is not in the text",
+      "location": "line 2",
+      "severity": "major",
+      "confidence": 0.8,
+      "audience": "nurse"
+    }
+  ]
+}

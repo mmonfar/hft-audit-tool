@@ -1,0 +1,12 @@
+{
+ "case_id": "P12",
+ "expected_quotes": [
+  "This window cannot be closed.",
+  "You must pick one to continue"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "forced choice",
+ "rule_id": "NIE-04",
+ "split": "dev"
+}

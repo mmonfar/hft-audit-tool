@@ -1,0 +1,12 @@
+{
+ "case_id": "P02",
+ "expected_quotes": [
+  "10 U",
+  "Give 10 U subcut at night"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "U for units",
+ "rule_id": "EMR-01",
+ "split": "dev"
+}

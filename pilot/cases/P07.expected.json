@@ -1,0 +1,13 @@
+{
+ "case_id": "P07",
+ "expected_quotes": [
+  "[Save]",
+  "[Save] save as draft",
+  "[Save] sign and send"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "one label for two actions",
+ "rule_id": "NIE-02",
+ "split": "dev"
+}

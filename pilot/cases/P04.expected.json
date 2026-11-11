@@ -1,0 +1,12 @@
+{
+ "case_id": "P04",
+ "expected_quotes": [
+  ".5 mg",
+  "Dravolex .5 mg tablet"
+ ],
+ "expected_state": "CONFIRMED",
+ "group": "fault",
+ "note": "no leading zero",
+ "rule_id": "EMR-01",
+ "split": "dev"
+}

@@ -1,0 +1,9 @@
+{
+ "case_id": "P17",
+ "expected_quotes": [],
+ "expected_state": "UNABLE TO CHECK",
+ "group": "unreadable",
+ "note": "must say UNABLE TO CHECK, never no findings",
+ "rule_id": null,
+ "split": "dev"
+}

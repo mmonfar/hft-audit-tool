@@ -1,0 +1,9 @@
+{
+ "case_id": "P11",
+ "fault_types": "NIE-03",
+ "group": "fault",
+ "kind": "alert",
+ "planted": "none",
+ "split": "dev",
+ "tool_state": "ok"
+}

@@ -1,0 +1,318 @@
+{
+ "version": "0.1",
+ "name": "Human factors pre-check framework v0",
+ "purpose": "Questions a reviewer asks of an alert, a note or an order set, written as a design-level list of failure modes (a one-pass FMEA style view). Pre-check only. Not a medical device.",
+ "alert_inputs": {
+  "audience": [
+   "nurse",
+   "doctor",
+   "pharmacist",
+   "patient"
+  ],
+  "audience_source": "needs source",
+  "timing": [
+   "prescribing",
+   "verifying",
+   "dispensing",
+   "administering"
+  ],
+  "timing_source": "needs source",
+  "note": "Alert criteria are judged for one audience at one timing. Both lists are practice, not evidence, until a source is added."
+ },
+ "criteria": [
+  {
+   "id": "alert-01",
+   "artefact": "alert",
+   "question": "Does the alert name the value or the reason that matters?",
+   "failure_mode": "The reader cannot tell why it fired, so it is dismissed by habit and a real warning is missed.",
+   "detect": "text_pattern",
+   "rule_id": "ALT-01",
+   "source": "wiki/Human Factors in Clinical Information Design",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer reads the text and finds only generic words such as 'caution' or 'check'.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-02",
+   "artefact": "alert",
+   "question": "Can this alert be told apart from the other alerts on the same screen?",
+   "failure_mode": "Alerts of different weight look the same, so the serious one is treated like the minor ones.",
+   "detect": "measure",
+   "rule_id": "ALT-02",
+   "source": "wiki/Human Factors in Clinical Information Design",
+   "fmea_fields": {
+    "severity_guess": "minor",
+    "early_sign": "Reviewer lays the alerts side by side and cannot tell two types apart at a glance.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-03",
+   "artefact": "alert",
+   "question": "Does the alert offer more than a dismiss button, such as a choice or a reason?",
+   "failure_mode": "The user can only close the alert, so safe action and override look the same.",
+   "detect": "text_pattern",
+   "rule_id": "ALT-03",
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Button labels are only X, OK or Cancel.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-04",
+   "artefact": "alert",
+   "question": "Does the alert name the next action, and does each button match that action?",
+   "failure_mode": "The reader sees a problem but not what to do, so the next step is guessed.",
+   "detect": "human_only",
+   "rule_id": null,
+   "source": "wiki/Human Factors in Clinical Information Design",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer asks 'what do I do now?' and the alert does not answer.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-05",
+   "artefact": "alert",
+   "question": "Is the alert meant for the role that can act on it (the audience input)?",
+   "failure_mode": "The wrong person gets the alert, so it is ignored, or the right person never sees it.",
+   "detect": "human_only",
+   "rule_id": null,
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer cannot name who must act on the alert.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-06",
+   "artefact": "alert",
+   "question": "Does the alert appear at a step where the action is still possible (the timing input)?",
+   "failure_mode": "The alert comes too early or too late to change the outcome, and adds to alert fatigue.",
+   "detect": "human_only",
+   "rule_id": null,
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer finds the alert shows after the step it concerns.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-07",
+   "artefact": "alert",
+   "question": "If the alert shows an error, does it say what went wrong and how to fix it?",
+   "failure_mode": "The user repeats the same failing step and loses time.",
+   "detect": "text_pattern",
+   "rule_id": "NIE-03",
+   "source": "nielsen-usability-heuristics-reference",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Error text has no instruction word.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-08",
+   "artefact": "alert",
+   "question": "Can the alert be closed or undone without a forced choice?",
+   "failure_mode": "The user is trapped in the alert and picks any option to move on.",
+   "detect": "measure",
+   "rule_id": "NIE-04",
+   "source": "nielsen-usability-heuristics-reference",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "No close, cancel or undo control is found on the alert box.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-09",
+   "artefact": "alert",
+   "question": "Are the alert buttons at least 24 x 24 CSS px?",
+   "failure_mode": "The wrong button is pressed and a warning is overridden by mistake.",
+   "detect": "measure",
+   "rule_id": "EMR-03",
+   "source": "wcag-22-reference",
+   "fmea_fields": {
+    "severity_guess": "minor",
+    "early_sign": "Measured button box is under 24 x 24 CSS px.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "alert-10",
+   "artefact": "alert",
+   "question": "Is the alert text readable against its background (contrast at least 4.5 to 1)?",
+   "failure_mode": "Text is missed in a bright ward or on a poor screen.",
+   "detect": "measure",
+   "rule_id": "LBL-18",
+   "source": "wcag-22-reference",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Contrast ratio from the screenshot is under 4.5 to 1.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "note-01",
+   "artefact": "note",
+   "question": "Is the note split into fields or headings, not one long block of free text?",
+   "failure_mode": "The reader skims a wall of text and misses the one fact that matters.",
+   "detect": "measure",
+   "rule_id": "NOTE-01",
+   "source": "wiki/Human Factors in Clinical Information Design",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Text length is long and no heading or field label is found.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "note-02",
+   "artefact": "note",
+   "question": "Are the standard handover fields all present?",
+   "failure_mode": "A field is left out, so the next shift does not know a key fact.",
+   "detect": "text_pattern",
+   "rule_id": "NOTE-02",
+   "source": "wiki/Human Factors in Clinical Information Design",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "A field from the handover structure is missing.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "note-03",
+   "artefact": "note",
+   "question": "Are open tasks ranked by risk or by time?",
+   "failure_mode": "A time-critical task is buried below routine ones and done late.",
+   "detect": "human_only",
+   "rule_id": "NOTE-03",
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer finds tasks in the order they were written, not the order they matter.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "note-04",
+   "artefact": "note",
+   "question": "Does the note avoid abbreviations that can be misread (for example 'U' for units)?",
+   "failure_mode": "A misread abbreviation is copied into an order and a wrong dose is given.",
+   "detect": "text_pattern",
+   "rule_id": "EMR-01",
+   "source": "ismp-error-prone-abbreviations-reference",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Text pattern finds a listed abbreviation.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-01",
+   "artefact": "order_set",
+   "question": "Are error-prone abbreviations kept out of the order set text?",
+   "failure_mode": "A misread abbreviation leads to a wrong dose or wrong frequency across many patients.",
+   "detect": "text_pattern",
+   "rule_id": "EMR-01",
+   "source": "ismp-error-prone-abbreviations-reference",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Text pattern finds a listed abbreviation in an order line.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-02",
+   "artefact": "order_set",
+   "question": "Do look-alike drug names show tall-man letters in the pick list?",
+   "failure_mode": "A look-alike name is picked by mistake and the wrong drug is ordered.",
+   "detect": "text_pattern",
+   "rule_id": "EMR-02",
+   "source": "tall-man-lettering-lists-reference",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "A name from the look-alike pair list appears without tall-man letters.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-03",
+   "artefact": "order_set",
+   "question": "Are the controls in the order set at least 24 x 24 CSS px?",
+   "failure_mode": "The wrong box is ticked, and the error repeats across the set.",
+   "detect": "measure",
+   "rule_id": "EMR-03",
+   "source": "wcag-22-reference",
+   "fmea_fields": {
+    "severity_guess": "minor",
+    "early_sign": "Measured control box is under 24 x 24 CSS px.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-04",
+   "artefact": "order_set",
+   "question": "Does each action have its own label, with no label used for two actions?",
+   "failure_mode": "The user cannot tell which action a button will start.",
+   "detect": "text_pattern",
+   "rule_id": "NIE-02",
+   "source": "nielsen-usability-heuristics-reference",
+   "fmea_fields": {
+    "severity_guess": "minor",
+    "early_sign": "Same label text found on two controls with different effects.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-05",
+   "artefact": "order_set",
+   "question": "Are the items that are pre-ticked a safe default?",
+   "failure_mode": "A pre-ticked item is accepted without thought and given to a patient it does not suit.",
+   "detect": "human_only",
+   "rule_id": null,
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer finds a pre-ticked item that is not right for every patient.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-06",
+   "artefact": "order_set",
+   "question": "Does the set say what it is for and who may use it?",
+   "failure_mode": "The set is used for the wrong patient group.",
+   "detect": "human_only",
+   "rule_id": null,
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "No purpose line or user group is found at the top of the set.",
+    "label": "guess, not a score"
+   }
+  },
+  {
+   "id": "order_set-07",
+   "artefact": "order_set",
+   "question": "Are there items in the set that repeat or conflict with each other?",
+   "failure_mode": "Two orders overlap and the patient gets a double dose.",
+   "detect": "human_only",
+   "rule_id": null,
+   "source": "needs source",
+   "fmea_fields": {
+    "severity_guess": "major",
+    "early_sign": "Reviewer finds two items with the same drug or class.",
+    "label": "guess, not a score"
+   }
+  }
+ ]
+}

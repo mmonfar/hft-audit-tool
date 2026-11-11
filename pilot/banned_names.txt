@@ -1,0 +1,19 @@
+# Real product names that must never appear in a pilot case. One word per line.
+Tylenol
+Panadol
+Lipitor
+Zocor
+Xanax
+Valium
+Coumadin
+Lasix
+Zestril
+Norvasc
+Glucophage
+Lantus
+Humalog
+Nexium
+Plavix
+Seroquel
+Ventolin
+Augmentin
