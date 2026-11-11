@@ -1,10 +1,30 @@
 # hft-audit-tool
 
+![The web screen of the tool on a made-up drug label. Banners at the top say: pilot, made-up case, not a medical device, not reviewed by a human, no accuracy figure. On the left, the sample label has a numbered box 1 around "Take 1 tablet QD". On the right, the decision panel shows the quote, the decision CONFIRMED, what the model suggested (rule EMR-01) and the code rule result: pattern "QD" found inside the quote.](docs/readme_hero.png)
+
 A local pre-check for human factors review of medication labels and alerts. It runs on one computer, uses made-up cases only, and never replaces a human factors engineer. Every output says NOT REVIEWED.
 
-Status: step 1 of a pilot. This repo holds the design (`docs/sdd.md`), the log spec (`docs/specs/log_schema.md`), the SQLite schema (`schema.sql`) and its tests.
+Status: pilot. The full tool is here and it works on made-up cases. Models suggest findings. Code rules decide which findings stay.
 
-Run the tests: `python -m pytest -q tests`
+What the repo holds:
+
+- The tool: three agent steps (reader, rule checker, referee) in `orchestrator.py`, `referee.py`, `risk_step.py` and the agent prompts in `agents/`.
+- The audit log: SQLite schema (`schema.sql`, `chain_schema.sql`) and the log writer with a hash link (`log.py`).
+- The web screen: a local server (`server.py`) and the page in `web/`. It shows each run as a live record or a replay.
+- The pilot: 20 made-up cases and the runner in `pilot/`.
+- The design and specs: `docs/sdd.md` and `docs/specs/`.
+- The tests: `tests/` (pytest).
+
+Run the tests:
+
+    python -m pytest -q tests
+
+Run the web demo (fake model, no network):
+
+    python pilot/run_pilot.py --stub --out-dir demo_run
+    python server.py demo_run/audit_log_pilot.sqlite --replay
+
+Then open the address it prints (http://127.0.0.1:8765/). The server listens on this computer only. Press Ctrl+C to stop it.
 
 ## Licence
 
